@@ -1,0 +1,101 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<p><h1 align="center">TẠO TÀI KHOẢN</h1></p>
+<fieldset id="basicInfo">
+    <legend>Thông tin tài khoản</legend>
+    <table style="text-align:left">
+        <tr>
+            <th style="width:40%;">Họ và Tên: </th>
+            <th>
+                <input type="text" id="name" name="Name" maxlength="100" /><br />
+            </th>
+        </tr>
+
+        <tr>
+            <th style="width:5%;">Giới tính: </th>
+            <th>
+                <select name="sex" id="Bisexual">
+                    <option value="Male">Nam</option>
+                    <option value="Female">Nữ</option>
+                </select>
+            </th>
+        </tr>
+
+        <tr>
+            <th style="width:40%">Email: </th>
+            <th>
+                <input type="email" id="E-mail" name="Email" /><br />
+            </th>
+        </tr>
+
+        <tr>
+            <th style="width:40%;">Ngày Sinh: </th>
+            <th>
+                <input type="date" /><br />
+            </th>
+        </tr>
+
+        <tr>
+            <th style="width:40%;">PassWord: </th>
+            <th>
+                <input type="password" id="Pw" name="PassWord" /><br />
+            </th>
+        </tr>
+        <tr>
+            <th style="width:40%;">Nhập lại Password: </th>
+            <th>
+                <input type="password" id="R_Pw" name="re_PassWord" /><br />
+            </th>
+        </tr>
+
+    </table>
+</fieldset>
+
+<fieldset id="otherInfo">
+    <legend>Thông tin thu nhập</legend>
+    <table style="text-align:left">
+        <tr>
+            <th style="width:40%;">Nghề nghiệp</th>
+            <th>
+                <select name="job" id="job">
+                    <option value="manager">Quản lý</option>
+                    <option value="accountant">Kế toán</option>
+                    <option value="cep">Tiếp tân</option>
+                    <option value="chef">Đầu bếp</option>
+                    <option value="staf_1">Nhân viên văn phòng</option>
+                    <option value="staff_2">Nhân viên điện máy</option>
+                </select>
+            </th>
+        </tr>
+
+        <tr>
+            <th style="width:40%;">Thu Nhập</th>
+            <th>
+                <table border="1">
+                    <tr>
+                        <th>
+                            <ul>
+                                <li><input type="radio" value="U10m" name="money"/>Dưới 10 triệu</li>
+                                <li><input type="radio" value="F10to20m" name="money"/>Từ 10 - 20 triệu</li>
+                                <li><input type="radio" value="O20m" name="money"/>Trên 20 triệu</li>
+                            </ul>
+                        </th>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </table>
+</fieldset>
+
+<table align="right">
+    <tr>
+        <th>
+            <a href="https://itviec.com/vi" target="_blank"><input type="submit" value="Đăng ký" /></a>
+        </th>
+     </tr>
+ </table>
+
